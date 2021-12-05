@@ -80,7 +80,7 @@ nav a:hover{	/*comando para manipular as ações do usuario sobre algo na pagina
 
 footer{
 	text-align: center; 
-	background: url("bg.jpg"); /*colocar imagem de fundo*/
+	background: url("images/bg.jpg"); /*colocar imagem de fundo*/
 	padding: 40px 0;
 }
 
