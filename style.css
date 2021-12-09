@@ -89,3 +89,29 @@ footer{
 	font-size: 13px;
 	margin: 20px;
 }
+
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+
+form{ /*configurando o formulário*/
+	margin: 40px 0;
+}
+
+form label, p{ /*configurando a label*/
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao{ /*configurando o input e textarea*/
+	display: block;
+	margin: 0 0 20px; /*espaçamento externo*/
+	padding: 10px 25px; /*espaçamento interno*/
+	width: 50%;
+}
+
+.checkbox{ /*configurando a classe checkbox*/
+	margin: 20px 0;
+}
