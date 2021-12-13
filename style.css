@@ -99,7 +99,7 @@ form{ /*configurando o formulário*/
 	margin: 40px 0;
 }
 
-form label, p{ /*configurando a label*/
+form label, legend{ /*configurando a label*/
 	display: block;
 	font-size: 20px;
 	margin: 0 0 10px;
@@ -114,4 +114,21 @@ form label, p{ /*configurando a label*/
 
 .checkbox{ /*configurando a classe checkbox*/
 	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s background; /*transição de cor do botão*/
+	cursor: pointer; /*transoformar o botão em mão de link*/
+}
+
+.enviar:hover{
+	background-color: darkorange; /*cor que o botão ficará após o mouse estar por cima*/
 }
