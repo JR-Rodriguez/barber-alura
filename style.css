@@ -125,10 +125,32 @@ form label, legend{ /*configurando a label*/
 	font-size: 18px;
 	border: none;
 	border-radius: 5px;
-	transition: 1s background; /*transição de cor do botão*/
+	transition: 1s all; /*transição de cor do botão e de tudo dentro dele, por isso all*/
 	cursor: pointer; /*transoformar o botão em mão de link*/
 }
 
 .enviar:hover{
 	background-color: darkorange; /*cor que o botão ficará após o mouse estar por cima*/
+	transform: scale(1.2); /*aumentar botão proporcionalmente de tamanho ao toque*/
+}
+
+/*css da tabela*/
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid #000000;
+	padding: 15px 8px;
+}
+
+#celulainteira{
+	text-align: center;
+	font-weight: bold;
 }
