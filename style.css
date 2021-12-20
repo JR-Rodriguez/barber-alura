@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------fim do reset.css-----------------------------------*/
+
 body{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -95,7 +145,7 @@ footer{
 }
 
 form{ /*configurando o formulário*/
-	margin: 40px 0;
+	margin: 40px 80px;
 }
 
 form label, legend{ /*configurando a label*/
@@ -113,6 +163,10 @@ form label, legend{ /*configurando a label*/
 
 .checkbox{ /*configurando a classe checkbox*/
 	margin: 20px 0;
+}
+
+form legend{
+	font-weight: bold;
 }
 
 .enviar{
@@ -135,7 +189,7 @@ form label, legend{ /*configurando a label*/
 
 /*CSS DA TABELA*/
 table{
-	margin: 20px 0 40px;
+	margin: 20px 80px;
 }
 
 thead{
@@ -153,8 +207,6 @@ td, th{
 	text-align: center;
 	font-weight: bold;
 }
-
-
 
 /*CSS DA PAGINA INICIAL*/
 .banner{
@@ -234,11 +286,42 @@ td, th{
 	font-weight: bold;
 }
 
-.imagem-beneficios{
-	width: 60%;
+.itens:before{ /*seleciona onde o elemento estará posicionado: no exemplo, antes de qualquer classe "itens"*/
+	content: "★ ";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; /*adicionando somra a imagem (X, Y, inicio do efeito no fim da sombra, cor*/
+}
+
+.imagem-beneficios:hover { /*efeito da imagem ao passar do mouse*/
+    opacity: 0.3; 
 }
 
 .video{
 	width: 560px;
 	margin: 2em auto;
+}
+
+ /*fazendo a página ficar responsiva para funcionar bem em smartphone*/
+@media screen and (max-width: 768px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+	
 }
