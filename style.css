@@ -323,5 +323,17 @@ td, th{
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
+
+	.produtos  {
+		width: auto;
+		display: grid;	
+	}
 	
+	.produtos li{
+		width: 70%;
+		align-items: center;
+		text-align: center;
+		margin: 10px auto;
+	}
+
 }
