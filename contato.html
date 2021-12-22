@@ -2,21 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width"> <!--adaptando o site a telas de celular-->
-		<title>Contato - Barbearia Alura</title> <!-- titulo da pagina-->
+		<meta name="viewport" content="width=device-width"> 
+		<title>Contato - Barbearia Alura</title> 
 
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
 
 	</head>
+	
 	<body>
-		<header> <!-- cabeçalho-->
+		<header> 
 				<div class="caixa">
-					<h1><img src="images/logo.png" alt="Logo da Barbearia Alura"></h1>  <!-- adicionar arquivos de imagem-->
-					<nav>  			<!-- tag usada para criar itens de navegação-->
-						<ul> <!-- cria lista não ordenada-->
+					<h1><img src="images/logo.png" alt="Logo da Barbearia Alura"></h1>
+					<nav>  			
+						<ul> 
 							<li><a href="index.html">Home</a></li> 
-							<li><a href="produtos.html">Produtos</a></li> <!-- criação de link-->
+							<li><a href="produtos.html">Produtos</a></li> 
 							<li><a href="contato.html">Contatos</a></li>
 						</ul>
 					</nav>
@@ -24,53 +25,51 @@
 		</header>
 		
 		<main>
-			<form> <!--contrução de formulário-->
-				<label for="nomesobrenome">Nome e Sobrenome</label> <!--etiqueta de conteudo, sempre acompnha o input-->
-				<input type="text" id="nomesobrenome" class="input-padrao" required> <!-- tag da entrada de dado no formulário com o tipo texto-->
+			<form> 
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
 
 				<label for="email">Email</label> 
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br"> <!--placeholder faz com que apareça uma mensagem temporária de sugestão de conteúdo do input-->
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
 
 				<label for="telefone">Telefone</label> 
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!--required torna o preenchimento do input obrigatorio-->
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
 				<label for="mensagem">Mensagem</label >
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--caixa de texto*-->
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 				
-				<fieldset> <!--tag para organizar assuntos específicos, usada em formulários-->
+				<fieldset> 
 					<legend>Como prefere o nosso contato?</legend>
 					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label> 
-					 <!--criando o radio button*-->
 
 					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 					
-
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label> <!--checked deixa marcada uma opção do radiobutton como sugestão-->
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label> 
 				</fieldset>
 				
 				<fieldset> 
 					<legend>Qual horário prefere ser atendido?</legend>
-					<select> <!--criando a caixa de seleção (dropdown)-->
-						<option>Manhã</option> <!--opções da caixa-->
+					<select> 
+						<option>Manhã</option> 
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>	
 				</fieldset>
 
-					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label> <!--criando o chekbox-->
+					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
-					<input type="submit" value="Enviar Formulário" class="enviar"> <!--input pra enviar os dados-->		
+					<input type="submit" value="Enviar Formulário" class="enviar">		
 			</form>
 
 			<table>
-				<thead> <!--cabeçalho da tabela-->
-					<tr> <!--linha da tabela - table row-->
-						<th>Dia</th> <!--celulas da linha-->
+				<thead> 
+					<tr> 
+						<th>Dia</th>
 						<th>Horário</th>
 					</tr>
 				</thead>
 				
-				<tbody><!--corpo da tabela-->
+				<tbody>
 					<tr>
 						<td>Segunda</td>
 						<td>8hs - 20hs</td>
@@ -79,7 +78,6 @@
 					<tr>
 						<td>Quarta</td>
 						<td>8hs - 20hs</td>
-	
 					</tr>
 	
 					<tr>
@@ -88,15 +86,15 @@
 					</tr>
 
 					<tr>
-						<td colspan="5" id="celulainteira">Venha nos conhecer!</td> <!--mesclando células-->
+						<td colspan="5" id="celulainteira">Venha nos conhecer!</td> 
 					</tr>
 				</tbody>		
 			</table>
+		</main> 
 
-		</main>
 		<footer> 
-			<img src="images/logo-branco.png" alt="Logo da Barbearia Alura"> <!--alt faz a imagem ter um comentário sobre ela-->
+			<img src="images/logo-branco.png" alt="Logo da Barbearia Alura">
 			<p class="copyright"> &copy; Copyright Barbearia Alura 2021</p>
-		</footer> <!--tag usada para criar rodapés na página-->
+		</footer> 
 	</body>
 </html>
